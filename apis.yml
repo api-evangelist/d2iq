@@ -1,7 +1,28 @@
 aid: d2iq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/d2iq.png
 name: D2iQ
-description: D2iQ is a company surfaced as a portfolio company of a16z, dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  D2iQ (formerly Mesosphere, maker of DC/OS) was an enterprise Kubernetes company
+  whose flagship product, the D2iQ Kubernetes Platform (DKP), delivered production-grade
+  Kubernetes cluster provisioning, day-2 operations, and application management across
+  cloud, on-premises, edge, and air-gapped environments. D2iQ was acquired by Nutanix
+  in early 2024; DKP was folded into and rebranded as the Nutanix Kubernetes Platform
+  (NKP), which launched in May 2024. The independent D2iQ web and developer surfaces are
+  now retired: d2iq.com redirects to nutanix.com/d2iq and docs.d2iq.com redirects to the
+  Nutanix support portal, so D2iQ no longer operates a first-party public API, developer
+  portal, or artifact surface of its own. This profile is retained as a historical /
+  acquired-company record in the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/d2iq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,15 +30,35 @@ x-backed-by:
 - a16z
 - dcvc
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-defunct
+x-status: acquired
+x-successor: Nutanix
+x-successor-product: Nutanix Kubernetes Platform (NKP)
+x-successor-url: https://www.nutanix.com/d2iq
+x-enrichment-note: >-
+  Enrichment attempted 2026-07-18. No independent live D2iQ surface remains: d2iq.com
+  (301 -> nutanix.com/d2iq), www.d2iq.com (301 -> d2iq.com), and docs.d2iq.com
+  (302 -> portal.nutanix.com) all redirect into Nutanix. No first-party API, OpenAPI,
+  well-known, or package surface to harvest. No artifacts created (no fabrication).
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Kubernetes
+- Containers
+- Cloud Native
+- DevOps
+- Platform
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
