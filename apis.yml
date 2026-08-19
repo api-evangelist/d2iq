@@ -40,7 +40,7 @@ x-enrichment-note: >-
   (301 -> nutanix.com/d2iq), www.d2iq.com (301 -> d2iq.com), and docs.d2iq.com
   (302 -> portal.nutanix.com) all redirect into Nutanix. No first-party API, OpenAPI,
   well-known, or package surface to harvest. No artifacts created (no fabrication).
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
 tags:
